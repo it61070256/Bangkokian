@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header {
+    height:100vh;
+    width: auto;
+    background-image: url(./ATF/ATFheader.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#red {
+    height:100vh;
+    width: auto;
+    background-color: red;
+}
+.aleft{
+    background-size: auto;
+    position: absolute;
+    bottom: -13vh;
+    left: 6vw;
+    animation-name: lr;
+    animation-duration: 2s;
+}
+.aright{
+    background-size: auto;
+    position: absolute;
+    bottom: -12vh;
+    right: 11vw;
+    animation-name: rl;
+    animation-duration: 2s;
+}
+.krung{
+    font-family: 'Chakra Petch';
+    font-size: 36pt;
+    font-weight: 550;
+    color: #fff;
+    position: absolute; 
+    bottom: 30px; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+    
+}
+#black {
+    background-color: black;
+    height: 300vh;
+    width: auto;
+}
+
+@keyframes lr {
+    0%   {opacity:0;left:-20vw; bottom:-13vh;}
+    100% {opacity:1;left:6vw; bottom:-13vh;}
+  }
+
+@keyframes rl {
+    0%   {opacity:0;right:-10vw; bottom:-12vh;}
+    100% {opacity:1;right:11vw; bottom:-12vh;}
+  }
