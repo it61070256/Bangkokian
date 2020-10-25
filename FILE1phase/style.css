@@ -9,6 +9,13 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.wait {
+    height:100vh;
+    width: auto;
+    background-image: url(./Wait/wait.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #red {
     height:100vh;
     width: auto;
