@@ -90,7 +90,7 @@
 }
 
 .scrolling-box {
-    background-color: #ffffff;
+    background-color: #000000;
     display: block;
     width: 223px;
     height: 402px;
@@ -100,12 +100,67 @@
     position: absolute;
     top:157%;
     left:43.168%;
-    z-index: 1;
-    opacity: 1;
+    z-index: 3;
 }
-.white{
-    color:white;
-    opacity: 1;
+.boxr1{
+    position: absolute;
+    top:-4%;
+    right: -10%;
+}
+.boxl1{
+    position: absolute;
+    top:9%;
+    left: -20%;
+}
+.boxr2{
+    position: absolute;
+    top:22%;
+    right: -10%;
+}
+.boxl2{
+    position: absolute;
+    top:35%;
+    left: -20%;
+}
+.boxr3{
+    position: absolute;
+    top:48%;
+    right: -10%;
+}
+.boxl3{
+    position: absolute;
+    top:61%;
+    left: -20%;
+}
+.boxr4{
+    position: absolute;
+    top:74%;
+    right: -10%;
+}
+.boxl4{
+    position: absolute;
+    top:87%;
+    left: -20%;
+}
+.boxr5{
+    position: absolute;
+    top:100%;
+    right: -10%;
+}
+.boxl5{
+    position: absolute;
+    top:113%;
+    left: -20%;
+}
+.boxr6{
+    position: absolute;
+    top:126%;
+    right: -10%;
+}
+.boxl6{
+    position: absolute;
+    top:139%;
+    left: -20%;
 }
 
 
