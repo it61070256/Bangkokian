@@ -1,0 +1,814 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar { display: none; }
+.header {
+    height:100vh;
+    width: auto;
+    background-image: url(./ATF/ATFheader.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+#red {
+    height:100vh;
+    width: auto;
+    background-color: red;
+}
+.aleft{
+    max-width: 100%;
+    position: absolute;
+    bottom: -13vh;
+    left: 6vw;
+    animation-name: lr;
+    animation-duration: 1s;
+}
+.aright{
+    max-width: 100%;
+    position: absolute;
+    bottom: -12vh;
+    right: 11vw;
+    animation-name: rl;
+    animation-duration: 1s;
+}
+.krung{
+    font-family: 'Chakra Petch';
+    font-size: 36pt;
+    font-weight: 550;
+    color: #fff;
+    position: absolute; 
+    bottom: 30px; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+}
+#black {
+    background-color: black;
+    height: 300vh;
+    width: auto;
+}
+.second{
+    height:100vh;
+    width: auto;
+    background-image: url(./รอแล้วได้อะไร/wait.svg);
+    background-repeat: no-repeat;
+    background-position:right center;
+    position: relative;
+}
+.topic{
+    text-align: center;
+    font-family: 'Chakra Petch';
+    font-size: 116pt;
+    font-weight: 700;
+    color: #ffff00;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    width: 100%;
+}
+.wait{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 15vw;
+    top: 130vh;
+    z-index: 2;
+}
+.really{
+    text-align: center;
+    font-family: 'Chakra Petch';
+    font-size: 155pt;
+    font-weight: 700;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: 285vh;
+    width: 100%;
+}
+
+.scrolling-box {
+    background-color: #000000;
+    display: block;
+    width: 13.3%;
+    height: 44.5%;
+    padding: 5px;
+    overflow: auto;
+    text-align: center;
+    position: absolute;
+    top:157%;
+    left:43.168%;
+    z-index: 3;
+}
+.msgcard {
+    box-shadow: 0 0px 25px rgba(0, 0, 0, .2);
+}
+
+.chat-log {
+    overflow: auto;
+    height: calc(75vh);
+}
+
+.chat-log_item {
+    background: #ffffff;
+    padding: 10px;
+    margin: 0 auto 10px;
+    max-width: 95%;
+    min-width: 25%;
+    float: left;
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    clear: both;
+}
+
+.chat-log_item.chat-log_item-own {
+    font-family: 'Chakra Petch';
+    font-size: 16px;
+    float: right;
+    background: #ffffff;
+    text-align: right;
+    margin-right: 0rem;
+    border-radius: 20px 0 20px 20px;
+}
+
+.chat-form {
+    background: #ffffff;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.chat-log_author {
+    margin: 0 auto 0em;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.chat-log_time {
+    margin: 0 auto .5em;
+    direction: rtl;
+    font-size: 12px;
+    opacity: 0.5;
+}
+.conbg{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+.conn{
+    max-height: 100vh;
+    max-width: 100vw;
+    position: absolute;
+    margin-top: -23%;
+}
+.pink{
+    margin-top: 27.4%;
+    height: 400.07vh;
+    background-color: rgba(255, 96, 255,1);
+}
+.where{
+    color: #ffff00;
+    font-size: 105pt;
+    text-align: center;
+    margin-top: 19.83vh;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    width: 100%;
+    font-weight: 700;
+}
+.case{
+    color: #ffff00;
+    font-size: 60pt;
+    text-align: center;
+    margin-top: 52.42vh;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    left:6%;
+    font-weight: 700;
+}
+.choose{
+    color: #000000;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 94vh;
+    width: 100%;
+    font-weight: 550;
+}
+.train{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 102vh;
+    left: 2vw;
+}
+.bus{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 102vh;
+    left: 35vw;
+}
+.taxi{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 99vh;
+    left: 66vw;
+}
+.case1{
+    color: #ffff00;
+    font-size: 60pt;
+    text-align: center;
+    margin-top: 162.42vh;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    left:6%;
+    font-weight: 700;
+}
+.choose1{
+    color: #000000;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 204vh;
+    width: 100%;
+    font-weight: 550;
+}
+.bike{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 204vh;
+    left: 11.5vw;
+}
+.bus1{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 212vh;
+    left: 32.5vw;
+}
+.ship{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 217.5vh;
+    left: 63vw;
+}
+.case2{
+    color: #ffff00;
+    font-size: 60pt;
+    text-align: center;
+    margin-top: 272.42vh;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    left:6%;
+    font-weight: 700;
+}
+.choose2{
+    color: #000000;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 314vh;
+    width: 100%;
+    font-weight: 550;
+}
+.bus2{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 322vh;
+    left: 32.5vw;
+}
+.taxi1{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 319vh;
+    left: 66vw;
+}
+.yellow{
+    background-color: #ffff00;
+    height: 660vh;
+}
+.day{
+    color:  rgba(255, 96, 255,1);
+    font-size: 105px;
+    text-align: center;
+    margin-top: 45vh;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    width: 100%;
+    font-weight: 700;
+}
+.allp{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 40vh;
+}
+.kid{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 125vh;
+    left: 9vw;
+    font-weight: 700;
+}
+.nor{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 125vh;
+    left: 22.5vw;
+    font-weight: 700;
+}
+.inj{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 125vh;
+    left: 34.5vw;
+    font-weight: 700;
+}
+.old{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 125vh;
+    left: 54.5vw;
+    font-weight: 700;
+}
+.preg{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 125vh;
+    left: 68.5vw;
+    font-weight: 700;
+}
+.bad{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 125vh;
+    left: 82.5vw;
+    font-weight: 700;
+}
+.bts{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 150vh;
+    left: 6.2vw;
+}
+.ytext1{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 155vh;
+    left: 55vw;
+    font-weight: 700;
+}
+.bigbusmove{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 285vh;
+    left: 6.2vw;
+}
+.bigbus{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 285vh;
+    left: 6.2vw;
+}
+.ytext2{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 285vh;
+    left: 55vw;
+    font-weight: 700;
+}
+.zebra{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 420vh;
+    left: 6.2vw;
+    z-index: 2;
+}
+.pzebra{
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 420vh;
+    left: 6.2vw;
+    z-index: 2;
+}
+.mzebra1{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 422vh;
+    left: 16vw;
+    z-index: 1;
+}
+.mzebra2{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 433vh;
+    left: 40.5vw;
+    z-index: 3;
+}
+.ytext3{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 410vh;
+    left: 45vw;
+    font-weight: 700;
+}
+.bigship{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 556vh;
+}
+.pship{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 556vh;
+}
+.ytext4{
+    color: #000000;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Chakra Petch';
+    position: absolute;
+    margin-top: 553vh;
+    left: 62vw;
+    font-weight: 700;
+}
+.orange{
+    background-color: rgba(255, 98, 0,1);
+    height: 490vh;
+}
+.money{
+    color: #ffff00;
+    font-size: 110px;
+    text-align: center;
+    margin-top: 65vh;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    width: 100%;
+    font-weight: 700;
+}
+.b10{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 105vh;
+    left: 5vw;
+}
+.b50{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 112.5vh;
+    left: 22.5vw;
+}
+.b100{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 112.2vh;
+    left: 45.5vw;
+}
+.b500{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 112.5vh;
+    left: 70.8vw;
+}
+.mtext1{
+    color: #ffffff;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Sarabun';
+    position: absolute;
+    margin-top: 143vh;
+    left: 12.5vw;
+    font-weight: 700;
+}
+.mtext2{
+    color: #ffffff;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Sarabun';
+    position: absolute;
+    margin-top: 143vh;
+    left: 30.7vw;
+    font-weight: 700;
+}
+.mtext3{
+    color: #ffffff;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Sarabun';
+    position: absolute;
+    margin-top: 143vh;
+    left: 54vw;
+    font-weight: 700;
+}
+.mtext4{
+    color: #ffffff;
+    font-size: 76px;
+    text-align: center;
+    font-family: 'Sarabun';
+    position: absolute;
+    margin-top: 143vh;
+    left: 79vw;
+    font-weight: 700;
+}
+.mase1{
+    color: #ffffff;
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Turret Road';
+    position: absolute;
+    margin-top: 173vh;
+    padding-left: 0px;
+    margin-left: 10vw;
+    font-weight: 700;
+}
+.pq1{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Turret Road';
+    position: absolute;
+    margin-top: 192vh;
+    width: 100%;
+    font-weight: 400;
+}
+.b10a{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 200vh;
+    left: 11vw;
+}
+.b50a{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 205vh;
+    left: 29.7vw;
+}
+.b100a{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 205vh;
+    left: 49.9vw;
+}
+.b500a{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 205vh;
+    left: 72.1vw;
+}
+.mase2{
+    color: #ffffff;
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Turret Road';
+    position: absolute;
+    margin-top: 273vh;
+    padding-left: 0px;
+    margin-left: 10vw;
+    font-weight: 700;
+}
+.pq2{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Turret Road';
+    position: absolute;
+    margin-top: 292vh;
+    width: 100%;
+    font-weight: 400;
+}
+.b10b{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 300vh;
+    left: 11vw;
+}
+.b50b{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 305vh;
+    left: 29.7vw;
+}
+.b100b{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 305vh;
+    left: 49.9vw;
+}
+.b500b{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 305vh;
+    left: 72.1vw;
+}
+.mase3{
+    color: #ffffff;
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Turret Road';
+    position: absolute;
+    margin-top: 373vh;
+    padding-left: 0px;
+    margin-left: 10vw;
+    font-weight: 700;
+}
+.pq3{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Turret Road';
+    position: absolute;
+    margin-top: 392vh;
+    width: 100%;
+    font-weight: 400;
+}
+.b10c{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 400vh;
+    left: 11vw;
+}
+.b50c{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 405vh;
+    left: 29.7vw;
+}
+.b100c{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 405vh;
+    left: 49.9vw;
+}
+.b500c{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 405vh;
+    left: 72.1vw;
+}
+.newblack{
+    background-color: #000000;
+    height: 580vh;
+}
+.good{
+    color: #ffffff;
+    font-size: 104px;
+    text-align: center;
+    font-family: 'Terret Road';
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 26vw;
+    font-weight: 550;
+}
+.good1{
+    color: #ffffff;
+    font-size: 104px;
+    text-align: center;
+    font-family: 'Terret Road';
+    position: absolute;
+    margin-top: 90vh;
+    width: 100%;
+    font-weight: 550;
+}
+.good2{
+    color: #ffffff;
+    font-size: 104px;
+    text-align: center;
+    font-family: 'Terret Road';
+    position: absolute;
+    margin-top: 170vh;
+    width: 100%;
+    font-weight: 550;
+}
+.good3{
+    color: #ffffff;
+    font-size: 104px;
+    text-align: center;
+    font-family: 'Terret Road';
+    position: absolute;
+    margin-top: 250vh;
+    width: 100%;
+    font-weight: 550;
+}
+.sahed1{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 310vh;
+    left: -5vw;
+}
+.sahed2{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 425vh;
+    left: 7vw;
+}
+.tana{
+    color: #ffff00;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Terret Road';
+    position: absolute;
+    margin-top: 362vh;
+    left: 75vw;
+    font-weight: 700;
+}
+.sata{
+    color: #ffff00;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Terret Road';
+    position: absolute;
+    margin-top: 475vh;
+    left: 10vw;
+    font-weight: 700;
+}
+
+
+.foot{
+    background-color: red;
+    height: 347px;
+    width: 1920px;
+}
+.tfoot{
+    color: white;
+    position: absolute;
+    font-family: 'Chakra Petch';
+    font-size: 24px;
+    margin-top:130px;
+    left: 570px;
+}
+@keyframes lr {
+    0%   {opacity:0;left:-20vw; bottom:-13vh;}
+    100% {opacity:1;left:6vw; bottom:-13vh;}
+  }
+
+@keyframes rl {
+    0%   {opacity:0;right:-10vw; bottom:-12vh;}
+    100% {opacity:1;right:11vw; bottom:-12vh;}
+  }
