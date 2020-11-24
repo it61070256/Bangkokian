@@ -19,6 +19,7 @@
         <img class="header" src="./ATF/ABOVE THE FLOW.png">
         <img class="aleft" src="./ATF/Atfleft.svg">
         <img class="aright" src="./ATF/ATFright.svg">
+        <a href="#black"><img class="next" src="pic/section1/clicknext.png"></a>
     </div>
     <div id="black" class="">
         <div class="topic">รอแล้วได้อะไร ?</div>
@@ -348,9 +349,11 @@
         <div class="lt1">อึดอัดมั้ยกับปัญหาที่เจอมาทุกวัน</div>
         <div class="lt2">มาร่วมเป็นส่วนหนึ่งของการผลักดัน</div>
         <div class="lt3">ให้ชาวกรุงเทพไม่เจอสิ่งนี้กัน</div>
-        <img class="share" src="./Pic/section6/part8/SHARE.png"> 
+        <p type="text" value="Hello World" id="myInput">
+        <img  onclick="myFunction()"class="share" src="./Pic/section6/part8/SHARE.png"> 
     </div>
     <!-- https://bangkokian.netlify.app/ -->
+
 
 
 </body>
@@ -362,4 +365,11 @@
         <img src="./รอแล้วได้อะไร/it.png"style="height:5vw;margin-top:6%;margin-left:1%">
     </div>
 </footer>
+<script>
+    function myFunction() {
+      var copyText = "https://bangkokian.netlify.app/"
+      document.execCommand("copy");
+      alert("Your Link : " + copyText);
+    }
+    </script>
 </html>

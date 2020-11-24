@@ -17,6 +17,13 @@
 #red {
     background-color: red;
 }
+.next{
+    height: 5vw;
+    position: absolute;
+    margin-top:45vw;
+    z-index: 5;
+    left: 46.5vw;
+}
 .aleft{
     width: auto;
     height: 30vw;
@@ -1632,12 +1639,13 @@
 .dark5{
     background-color:  black;
     height: 95.7vw;
+    margin-top: -1.5vw;
 }
 .part8{
     width: auto;
     height: 95.7vw;
     position: absolute;
-    margin-top:0vw;
+    margin-top:-0.8vw;
     left: -15vw;
     z-index: 0;
 }
