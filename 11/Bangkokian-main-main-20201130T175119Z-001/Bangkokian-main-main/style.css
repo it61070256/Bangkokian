@@ -227,15 +227,53 @@ body{
     position: absolute;
     margin-top: 51.5vw;
     left: 1.5vw;
+    animation: duk1 5s linear infinite;
 }
-/* .train:hover{
-    filter: drop-shadow(0 0 50px rgb(76, 78, 2));} */
+@keyframes duk1{
+    0%{ left: 1.5vw;}
+    14%{ left: 1.5vw;}
+    15%{ left: 1vw;}
+    17%{ left: 1.5vw;}
+    19%{ left: 1vw;}
+    21%{ left: 1.5vw;}
+    23%{ left: 1vw;}
+    24%{ left: 1.5;}
+    65%{ left: 1.5vw;}
+    67%{ left: 1.5vw;}
+    69%{ left: 1vw;}
+    71%{ left: 1.5vw;}
+    73%{ left: 1vw;}
+    75%{ left: 1.5vw;}
+    76%{ left: 1.5vw;}
+    100%{ left: 1.5vw;}
+}
+.train:hover,.bus:hover,.taxi:hover,.bike:hover,.bus1:hover,.ship:hover,.elec:hover,.bus2:hover,.taxi1:hover{
+    filter: drop-shadow(0 0 50px rgb(76, 78, 2));}
 .bus{
     width: auto;
     height: 10vw;
     position: absolute;
     margin-top: 51.5vw;
     left: 35vw;
+    animation: duk2 5s linear infinite;
+}
+@keyframes duk2{
+    0%{ left: 35vw;}
+    24%{ left: 35vw;}
+    25%{ left: 34.5vw;}
+    27%{ left: 35vw;}
+    29%{ left: 34.5vw;}
+    31%{ left: 35vw;}
+    33%{ left: 34.5vw;}
+    34%{ left: 35vw;}
+    75%{ left: 35vw;}
+    77%{ left: 35vw;}
+    79%{ left: 34.5vw;}
+    81%{ left: 35vw;}
+    83%{ left: 34.5vw;}
+    85%{ left: 35vw;}
+    86%{ left: 35vw;}
+    100%{ left: 35vw;}
 }
 .taxi{
     width: auto;
@@ -243,6 +281,25 @@ body{
     position: absolute;
     margin-top: 49vw;
     left: 65vw;
+    animation: duk3 5s linear infinite;
+}
+@keyframes duk3{
+    0%{ left: 65vw;}
+    34%{ left: 65vw;}
+    35%{ left: 64.5vw;}
+    37%{ left: 65vw;}
+    39%{ left: 64.5vw;}
+    41%{ left: 65vw;}
+    43%{ left: 64.5vw;}
+    44%{ left: 65vw;}
+    85%{ left: 65vw;}
+    87%{ left: 65vw;}
+    89%{ left: 64.5vw;}
+    91%{ left: 65vw;}
+    93%{ left: 64.5vw;}
+    95%{ left: 65vw;}
+    96%{ left: 65vw;}
+    100%{ left: 65vw;}
 }
 .ans1{
     transition: 0.5s;
@@ -322,6 +379,25 @@ body{
     position: absolute;
     margin-top: 112.5vw;
     left: 12vw;
+    animation: duk4 5s linear infinite;
+}
+@keyframes duk4{
+    0%{ left: 12vw}
+    14%{ left: 12vw}
+    15%{ left: 11.5vw;}
+    17%{ left: 12vw}
+    19%{ left: 11.5vw;}
+    21%{ left: 12vw}
+    23%{ left: 11.5vw;}
+    24%{ left: 1.5;}
+    65%{ left: 12vw}
+    67%{ left: 12vw}
+    69%{ left: 11.5vw;}
+    71%{ left: 12vw}
+    73%{ left: 11.5vw;}
+    75%{ left: 12vw}
+    76%{ left: 12vw}
+    100%{ left: 12vw}
 }
 .bus1{
     width: auto;
@@ -329,6 +405,25 @@ body{
     position: absolute;
     margin-top: 115.5vw;
     left: 33.5vw;
+    animation: duk8 5s linear infinite;
+}
+@keyframes duk8{
+    0%{ left:  33.5vw}
+    24%{ left:  33.5vw}
+    25%{ left: 33vw;}
+    27%{ left:  33.5vw}
+    29%{ left: 33vw;}
+    31%{ left:  33.5vw}
+    33%{ left: 33vw;}
+    34%{ left:  33.5vw}
+    75%{ left:  33.5vw}
+    77%{ left:  33.5vw}
+    79%{ left: 33vw;}
+    81%{ left:  33.5vw}
+    83%{ left: 33vw;}
+    85%{ left:  33.5vw}
+    86%{ left:  33.5vw}
+    100%{ left:  33.5vw}
 }
 .ship{
     width: auto;
@@ -336,6 +431,25 @@ body{
     position: absolute;
     margin-top: 117.5vw;
     left: 60vw;
+    animation: duk6 5s linear infinite;
+}
+@keyframes duk6{
+    0%{ left: 60vw;}
+    34%{ left: 60vw;}
+    35%{ left: 59.5vw}
+    37%{ left: 60vw;}
+    39%{ left: 59.5vw}
+    41%{ left: 60vw;}
+    43%{ left: 59.5vw}
+    44%{ left: 60vw;}
+    85%{ left: 60vw;}
+    87%{ left: 60vw;}
+    89%{ left: 59.5vw}
+    91%{ left: 60vw;}
+    93%{ left: 59.5vw}
+    95%{ left: 60vw;}
+    96%{ left: 60vw;}
+    100%{ left: 60vw;}
 }
 .ans4{
     transition: 0.5s;
@@ -415,6 +529,25 @@ body{
     position: absolute;
     margin-top: 179vw;
     left: -34vw;
+    animation: duk7 5s linear infinite;
+}
+@keyframes duk7{
+    0%{ left: -34vw}
+    14%{ left: -34vw}
+    15%{ left: -34.5vw;}
+    17%{ left: -34vw}
+    19%{ left: -34.5vw;}
+    21%{ left: -34vw}
+    23%{ left: -34.5vw;}
+    24%{ left: 1.5;}
+    65%{ left: -34vw}
+    67%{ left: -34vw}
+    69%{ left: -34.5vw;}
+    71%{ left: -34vw}
+    73%{ left: -34.5vw;}
+    75%{ left: -34vw}
+    76%{ left: -34vw}
+    100%{ left: -34vw}
 }
 .bus2{
     width: auto;
@@ -422,6 +555,25 @@ body{
     position: absolute;
     margin-top: 180.5vw;
     left: 33.5vw;
+    animation: duk8 5s linear infinite;
+}
+@keyframes duk8{
+    0%{ left:  33.5vw}
+    24%{ left:  33.5vw}
+    25%{ left: 33vw;}
+    27%{ left:  33.5vw}
+    29%{ left: 33vw;}
+    31%{ left:  33.5vw}
+    33%{ left: 33vw;}
+    34%{ left:  33.5vw}
+    75%{ left:  33.5vw}
+    77%{ left:  33.5vw}
+    79%{ left: 33vw;}
+    81%{ left:  33.5vw}
+    83%{ left: 33vw;}
+    85%{ left:  33.5vw}
+    86%{ left:  33.5vw}
+    100%{ left:  33.5vw}
 }
 .taxi1{
     width: auto;
@@ -429,6 +581,25 @@ body{
     position: absolute;
     margin-top: 178vw;
     left: 65vw;
+    animation: duk9 5s linear infinite;
+}
+@keyframes duk9{
+    0%{ left: 65vw;}
+    34%{ left: 65vw;}
+    35%{ left: 64.5vw;}
+    37%{ left: 65vw;}
+    39%{ left: 64.5vw;}
+    41%{ left: 65vw;}
+    43%{ left: 64.5vw;}
+    44%{ left: 65vw;}
+    85%{ left: 65vw;}
+    87%{ left: 65vw;}
+    89%{ left: 64.5vw;}
+    91%{ left: 65vw;}
+    93%{ left: 64.5vw;}
+    95%{ left: 65vw;}
+    96%{ left: 65vw;}
+    100%{ left: 65vw;}
 }
 .ans7{
     transition: 0.5s;
