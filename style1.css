@@ -89,7 +89,7 @@
       /* vertically align its content*/
       display: table;
     }
-    .cd-vertical-nav::before {
+    /*.cd-vertical-nav::before {
       /* this is the navigation background */
       /* content: '';
       position: absolute;
@@ -113,7 +113,7 @@
       -ms-transform: translateX(0);
       -o-transform: translateX(0);
       transform: translateX(0); */
-    }
+    /*}*/
     .cd-vertical-nav ul {
       /* vertically align <ul> inside <nav>*/
       display: table-cell;

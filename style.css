@@ -43,6 +43,10 @@ body{
     animation-name: lr;
     animation-duration: 1s;
 }
+@keyframes lr {
+    0%   {opacity:0;left:-20vw; bottom:-13vh;}
+    100% {opacity:1;left:10vw; bottom:-13vh;}
+  }
 .aright{
     width: auto;
     height: 30vw;
@@ -52,7 +56,10 @@ body{
     animation-name: rl;
     animation-duration: 1s;
 }
-
+@keyframes rl {
+    0%   {opacity:0; left:85.5vw; bottom:-12vh;}
+    100% {opacity:1; left:55.5vw; bottom:-12vh;}
+  }
 #black {
     background-color: black;
     height: 152vw;
@@ -1054,20 +1061,19 @@ body{
 
 .homeCaption {
 	position:fixed;
-	top: 50%;
-	left: 50%;
+    top: 24vw;
+    left: 50vw;
     transform: translate(-50%, -50%);
 	/* color: rgb(255, 20, 20); */
 	z-index: 1200;
-	font-size: 24px;
-	text-align: center;
+    font-family: 'Chakra Petch';
 }
 
 #section6_exten {    
     height:300vw;
     /* background: orange; */
     display: inline-block;
-    width: 100%;
+    width: 100vw;
 }
 .color-violet {
     background-color: #7A4EAB;
@@ -2001,15 +2007,7 @@ section{
     z-index: 3;
 }
 
-@keyframes lr {
-    0%   {opacity:0;left:-20vw; bottom:-13vh;}
-    100% {opacity:1;left:6vw; bottom:-13vh;}
-  }
 
-@keyframes rl {
-    0%   {opacity:0; right:-13vw; bottom:-12vh;}
-    100% {opacity:1; right:6vw; bottom:-12vh;}
-  }
 
 
   
