@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BANGKOKIAN JOURNEY</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Turret Road' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Sarabun' rel='stylesheet'>
@@ -13,10 +14,21 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    
 </head>
 
 <body style="overflow-x:hidden;background-color: black;">
+    <nav class="cd-vertical-nav" style="z-index: 5;">
+        <ul>
+            <li><a href="#red" class="active"><span class="label"></span></a></li>
+            <li><a href="#conbg"><span class="label"></a></li>
+            <li><a href="#orange"><span class="label"></a></li>
+            <li><a href="#gif_1"><span class="label"></a></li>
+            
+            <!-- additional navigation items here -->
+        </ul>
+    </nav>
     <div id="red">
         <img class="header" src="./ATF/ABOVE THE FLOW.png">
         <!-- <div data-100-top ="opacity:0;left:0;"  data-start="opacity:1;left:20%;"> -->
@@ -140,10 +152,10 @@
         </div>
         <div class="really">จริงหรือ</div>
     </div>
-    <div class="conbg">
+    <div id="conbg" class="conbg">
         <img class="conn" src="./รอแล้วได้อะไร/ccc.png">
     </div>
-    <div class="pink">
+    <div id="pink" class="pink">
         <div class="where" data-aos="zoom-in">ที่นี่ที่ไหนไปยังไงดีนะ ?</div>
         <div class="case" data-aos="zoom-in">CASE 1.1</div>
         <img class="q1" src="./Pic/section3/case 1_1.png">
@@ -241,8 +253,8 @@
         <img class="preg4" src="./Pic/section4.5/คนท้อง4.png">
         <img class="bad4" src="./Pic/section4.5/คนพิการ4.png">
     </div>    
-    <div class="orange">
-        <div class="money" data-aos="zoom-in">เงินเท่านี้ไปไหนได้บ้าง ?</div>
+    <div id="orange" class="orange">
+        <div  class="money" data-aos="zoom-in">เงินเท่านี้ไปไหนได้บ้าง ?</div>
         <img class="b10" src="./รอแล้วได้อะไร/10.png" width="356" height="auto">
         <img class="b50" src="./รอแล้วได้อะไร/50.png" width="414" height="204">
         <img class="b100" src="./รอแล้วได้อะไร/100.png" width="456" height="206">
@@ -373,7 +385,7 @@
         <p class="tg1">สามารถแก้ไขได้ด้วยนโยบาย</p>
         <p class="tg2">เพื่อให้ทุกคนเท่าเทียมกันได้</p>
     </div>
-    <div class="left">
+    <div id="gif_1" class="left">
         <img class="gif1" src="./Pic/section6/part4/01.gif">
         <p class="gt1">โครงการนำร่อง(Pilot Project) </p>
         <p class="gt2">เพื่อทุกคนสามารถเข้าถึงและใช้ประโยชน์ได้</p>
@@ -419,7 +431,7 @@
         <div class="ad3"></div>
         <div class="ad4"></div>
     </div>
-    <div class="black4">
+    <div class="black4" id="graph">
         <img class="part7" src="./Pic/section6/part7/04เห็นด้วยมั้ย_A.jpg">
         <p class="text1">แล้วคุณหล่ะ เห็นด้วยหรือไม่</p>
         <div class="pic1" width="100%">
@@ -436,7 +448,9 @@
         <div class="lt2">มาร่วมเป็นส่วนหนึ่งของการผลักดัน</div>
         <div class="lt3">ให้ชาวกรุงเทพไม่เจอสิ่งนี้กัน</div>
         <p type="text" value="Hello World" id="myInput">
-        <img  onclick="myFunction()"class="share" src="./Pic/section6/part8/SHARE.png"> 
+        <img id="share" value="add1" onclick="myFunction()" class="share" src="./Pic/section6/part8/SHARE.png"> 
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        </img>
     </div>
     <!-- https://bangkokian.netlify.app/ -->
 
@@ -489,6 +503,7 @@
         document.execCommand("copy");
         alert("Your Link : " + copyText);
     }
+    
 
     var case1_2 = document.getElementById("case 1_2");
     case1_2.style.opacity = 0;
@@ -726,4 +741,6 @@
             }, false);
     
     </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script><script  src="./script.js"></script>
 </html>
