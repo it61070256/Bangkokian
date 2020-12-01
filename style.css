@@ -2,6 +2,16 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+    /* height: 100%; */
+    /* overflow-y:scroll;
+    overflow-x:hidden; */
+    /* background-color: #000; */
+}
+body{
+    background-color: #000000;
+}
 ::-webkit-scrollbar { display: none; }
 .header {
     height:51vw;
@@ -118,7 +128,7 @@
     float: left;
     font-family: 'Chakra Petch';
     font-size: 16px;
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 20px 20px 20px;    
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
     clear: both;
 }
@@ -211,18 +221,59 @@
     font-weight: 550;
 }
 .train{
+    
     width: auto;
     height: 10vw;
     position: absolute;
     margin-top: 51.5vw;
     left: 1.5vw;
+    animation: duk1 5s linear infinite;
 }
+@keyframes duk1{
+    0%{ left: 1.5vw;}
+    14%{ left: 1.5vw;}
+    15%{ left: 1vw;}
+    17%{ left: 1.5vw;}
+    19%{ left: 1vw;}
+    21%{ left: 1.5vw;}
+    23%{ left: 1vw;}
+    24%{ left: 1.5;}
+    65%{ left: 1.5vw;}
+    67%{ left: 1.5vw;}
+    69%{ left: 1vw;}
+    71%{ left: 1.5vw;}
+    73%{ left: 1vw;}
+    75%{ left: 1.5vw;}
+    76%{ left: 1.5vw;}
+    100%{ left: 1.5vw;}
+}
+.train:hover,.bus:hover,.taxi:hover,.bike:hover,.bus1:hover,.ship:hover,.elec:hover,.bus2:hover,.taxi1:hover{
+    filter: drop-shadow(0 0 50px rgb(76, 78, 2));}
 .bus{
     width: auto;
     height: 10vw;
     position: absolute;
     margin-top: 51.5vw;
     left: 35vw;
+    animation: duk2 5s linear infinite;
+}
+@keyframes duk2{
+    0%{ left: 35vw;}
+    24%{ left: 35vw;}
+    25%{ left: 34.5vw;}
+    27%{ left: 35vw;}
+    29%{ left: 34.5vw;}
+    31%{ left: 35vw;}
+    33%{ left: 34.5vw;}
+    34%{ left: 35vw;}
+    75%{ left: 35vw;}
+    77%{ left: 35vw;}
+    79%{ left: 34.5vw;}
+    81%{ left: 35vw;}
+    83%{ left: 34.5vw;}
+    85%{ left: 35vw;}
+    86%{ left: 35vw;}
+    100%{ left: 35vw;}
 }
 .taxi{
     width: auto;
@@ -230,8 +281,28 @@
     position: absolute;
     margin-top: 49vw;
     left: 65vw;
+    animation: duk3 5s linear infinite;
+}
+@keyframes duk3{
+    0%{ left: 65vw;}
+    34%{ left: 65vw;}
+    35%{ left: 64.5vw;}
+    37%{ left: 65vw;}
+    39%{ left: 64.5vw;}
+    41%{ left: 65vw;}
+    43%{ left: 64.5vw;}
+    44%{ left: 65vw;}
+    85%{ left: 65vw;}
+    87%{ left: 65vw;}
+    89%{ left: 64.5vw;}
+    91%{ left: 65vw;}
+    93%{ left: 64.5vw;}
+    95%{ left: 65vw;}
+    96%{ left: 65vw;}
+    100%{ left: 65vw;}
 }
 .ans1{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -239,6 +310,7 @@
     left:12vw;
 }
 .ans2{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -246,6 +318,7 @@
     left:42vw;
 }
 .ans3{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -306,6 +379,25 @@
     position: absolute;
     margin-top: 112.5vw;
     left: 12vw;
+    animation: duk4 5s linear infinite;
+}
+@keyframes duk4{
+    0%{ left: 12vw}
+    14%{ left: 12vw}
+    15%{ left: 11.5vw;}
+    17%{ left: 12vw}
+    19%{ left: 11.5vw;}
+    21%{ left: 12vw}
+    23%{ left: 11.5vw;}
+    24%{ left: 1.5;}
+    65%{ left: 12vw}
+    67%{ left: 12vw}
+    69%{ left: 11.5vw;}
+    71%{ left: 12vw}
+    73%{ left: 11.5vw;}
+    75%{ left: 12vw}
+    76%{ left: 12vw}
+    100%{ left: 12vw}
 }
 .bus1{
     width: auto;
@@ -313,6 +405,25 @@
     position: absolute;
     margin-top: 115.5vw;
     left: 33.5vw;
+    animation: duk8 5s linear infinite;
+}
+@keyframes duk8{
+    0%{ left:  33.5vw}
+    24%{ left:  33.5vw}
+    25%{ left: 33vw;}
+    27%{ left:  33.5vw}
+    29%{ left: 33vw;}
+    31%{ left:  33.5vw}
+    33%{ left: 33vw;}
+    34%{ left:  33.5vw}
+    75%{ left:  33.5vw}
+    77%{ left:  33.5vw}
+    79%{ left: 33vw;}
+    81%{ left:  33.5vw}
+    83%{ left: 33vw;}
+    85%{ left:  33.5vw}
+    86%{ left:  33.5vw}
+    100%{ left:  33.5vw}
 }
 .ship{
     width: auto;
@@ -320,8 +431,28 @@
     position: absolute;
     margin-top: 117.5vw;
     left: 60vw;
+    animation: duk6 5s linear infinite;
+}
+@keyframes duk6{
+    0%{ left: 60vw;}
+    34%{ left: 60vw;}
+    35%{ left: 59.5vw}
+    37%{ left: 60vw;}
+    39%{ left: 59.5vw}
+    41%{ left: 60vw;}
+    43%{ left: 59.5vw}
+    44%{ left: 60vw;}
+    85%{ left: 60vw;}
+    87%{ left: 60vw;}
+    89%{ left: 59.5vw}
+    91%{ left: 60vw;}
+    93%{ left: 59.5vw}
+    95%{ left: 60vw;}
+    96%{ left: 60vw;}
+    100%{ left: 60vw;}
 }
 .ans4{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -329,6 +460,7 @@
     left:10vw;
 }
 .ans5{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -336,6 +468,7 @@
     left:41vw;
 }
 .ans6{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -396,6 +529,25 @@
     position: absolute;
     margin-top: 179vw;
     left: -34vw;
+    animation: duk7 5s linear infinite;
+}
+@keyframes duk7{
+    0%{ left: -34vw}
+    14%{ left: -34vw}
+    15%{ left: -34.5vw;}
+    17%{ left: -34vw}
+    19%{ left: -34.5vw;}
+    21%{ left: -34vw}
+    23%{ left: -34.5vw;}
+    24%{ left: 1.5;}
+    65%{ left: -34vw}
+    67%{ left: -34vw}
+    69%{ left: -34.5vw;}
+    71%{ left: -34vw}
+    73%{ left: -34.5vw;}
+    75%{ left: -34vw}
+    76%{ left: -34vw}
+    100%{ left: -34vw}
 }
 .bus2{
     width: auto;
@@ -403,6 +555,25 @@
     position: absolute;
     margin-top: 180.5vw;
     left: 33.5vw;
+    animation: duk8 5s linear infinite;
+}
+@keyframes duk8{
+    0%{ left:  33.5vw}
+    24%{ left:  33.5vw}
+    25%{ left: 33vw;}
+    27%{ left:  33.5vw}
+    29%{ left: 33vw;}
+    31%{ left:  33.5vw}
+    33%{ left: 33vw;}
+    34%{ left:  33.5vw}
+    75%{ left:  33.5vw}
+    77%{ left:  33.5vw}
+    79%{ left: 33vw;}
+    81%{ left:  33.5vw}
+    83%{ left: 33vw;}
+    85%{ left:  33.5vw}
+    86%{ left:  33.5vw}
+    100%{ left:  33.5vw}
 }
 .taxi1{
     width: auto;
@@ -410,8 +581,28 @@
     position: absolute;
     margin-top: 178vw;
     left: 65vw;
+    animation: duk9 5s linear infinite;
+}
+@keyframes duk9{
+    0%{ left: 65vw;}
+    34%{ left: 65vw;}
+    35%{ left: 64.5vw;}
+    37%{ left: 65vw;}
+    39%{ left: 64.5vw;}
+    41%{ left: 65vw;}
+    43%{ left: 64.5vw;}
+    44%{ left: 65vw;}
+    85%{ left: 65vw;}
+    87%{ left: 65vw;}
+    89%{ left: 64.5vw;}
+    91%{ left: 65vw;}
+    93%{ left: 64.5vw;}
+    95%{ left: 65vw;}
+    96%{ left: 65vw;}
+    100%{ left: 65vw;}
 }
 .ans7{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -419,6 +610,7 @@
     left:10vw;
 }
 .ans8{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -426,6 +618,7 @@
     left:41vw;
 }
 .ans9{
+    transition: 0.5s;
     width: auto;
     height: 10vw;
     position: absolute;
@@ -538,6 +731,8 @@
     position: absolute;
     margin-top: 75vw;
     left: 6.2vw;
+    animation-name: bs;
+    animation-duration: 1s;
 }
 .ytext1{
     color: #000000;
@@ -597,6 +792,21 @@
     position: absolute;
     margin-top: 148vw;
     left: 3.2vw;
+}
+.bigbusmove1{
+    width: auto;
+    height: 54vw;
+    position: absolute;
+    margin-top: 148vw;
+    left: 3.2vw;
+    animation: bi1 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+@keyframes bi1 {
+  0% { left: 8vw; transform: scale(0.5);}
+  25% { left: 8vw;  transform: scale(0.5);}
+  28%{ left: 3.2vw; transform: scale(1);}
 }
 .bigbus{
     width: auto;
@@ -668,18 +878,37 @@
 }
 .mzebra1{
     width: auto;
-    height: 25.5vw;
+    height: 27.5vw;
     position: absolute;
     margin-top: 229vw;
-    left: 16vw;
+    left: 10vw;
+    /* animation: ze1 0.5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s); */
+}
+@keyframes ze1 {
+    0% { left: -10vw; transform: scale(0.5);}
+    20% { left: 4vw;  transform: scale(0.5);}
+    40%{ left: 10vw; transform: scale(1);}
+ 
+
 }
 .mzebra2{
+    transition: 0.25s;
     width: auto;
     height: 26vw;
     position: absolute;
     margin-top: 235.5vw;
     left: 40.5vw;
     z-index: 2;
+    /* animation: ze2 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s); */
+}
+@keyframes ze2 {
+  0% { left: 10vw; transform: scale(1);}
+  33% { left: 10vw;  transform: scale(1);}
+  35%{ left: 95vw; transform: scale(1);}
 }
 .ytext3{
     color: #000000;
@@ -743,7 +972,16 @@
     width: auto;
     height: 56.3vw;
     position: absolute;
-
+    top: 751vw;
+    left: 0vw;
+    animation: a1 5s linear infinite;
+}
+@keyframes a1{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
 }
 .pship{
     width: auto;
@@ -809,6 +1047,53 @@
     background-color: rgba(255, 98, 0,1);
     height: 262vw;
 }
+.orange2{
+    background-color: rgba(255, 98, 0,1);
+    height: 262vw;
+}
+
+.homeCaption {
+	position:fixed;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+	/* color: rgb(255, 20, 20); */
+	z-index: 1200;
+	font-size: 24px;
+	text-align: center;
+}
+
+#section6_exten {    
+    height:300vw;
+    /* background: orange; */
+    display: inline-block;
+    width: 100%;
+}
+.color-violet {
+    background-color: #7A4EAB;
+}
+.color-indigo {
+background-color: #4332CF;
+}
+.color-blue {
+background-color: #2F8FED;
+}
+.color-green {
+background-color: #4DCF42;
+}
+.color-yellow {
+background-color: #FAEB33;
+}
+.color-orange {
+background-color: #F19031;
+}
+.color-red {
+background-color: #F2293A;
+}
+.color-black {
+background-color: #000000;
+}
+
 .square{ 
     width: 100vw;
 }
@@ -860,7 +1145,7 @@
     color: #ffffff;
     font-size: 5vw;
     text-align: center;
-    font-family: 'Sarabun';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 70vw;
     left: 8vw;
@@ -870,7 +1155,7 @@
     color: #ffffff;
     font-size: 5vw;
     text-align: center;
-    font-family: 'Sarabun';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 70vw;
     left: 28vw;
@@ -880,7 +1165,7 @@
     color: #ffffff;
     font-size: 5vw;
     text-align: center;
-    font-family: 'Sarabun';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 70vw;
     left: 53vw;
@@ -890,7 +1175,7 @@
     color: #ffffff;
     font-size: 5vw;
     text-align: center;
-    font-family: 'Sarabun';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 70vw;
     left: 78vw;
@@ -900,7 +1185,7 @@
     color: #ffffff;
     font-size: 2vw;
     text-align: center;
-    font-family: 'Turret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 95vw;
     margin-left: 5vw;
@@ -910,7 +1195,7 @@
     color: #ffffff;
     font-size: 1vw;
     text-align: center;
-    font-family: 'Turret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 101vw;
     width: 100vw;
@@ -952,7 +1237,7 @@
     color: #ffffff;
     font-size: 2vw;
     text-align: center;
-    font-family: 'Turret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 150vw;
     padding-left: 0vw;
@@ -963,7 +1248,7 @@
     color: #ffffff;
     font-size: 1vw;
     text-align: center;
-    font-family: 'Turret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 164vw;
     width: 100vw;
@@ -1005,7 +1290,7 @@
     color: #ffffff;
     font-size: 2vw;
     text-align: center;
-    font-family: 'Turret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 214vw;
     padding-left: 0vw;
@@ -1016,7 +1301,7 @@
     color: #ffffff;
     font-size: 1vw;
     text-align: center;
-    font-family: 'Turret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 226vw;
     width: 100vw;
@@ -1143,6 +1428,17 @@
     height: 91vw;
     background-image: url(./Pic/section6/part1/01บางอย่างก็ดี_A.jpg);
 }
+section{
+    justify-content: space-around;
+    display: flex;
+  
+  
+    /* background-color:orange; */
+    /* border: 1px solid rgb(255, 0, 0); */
+  
+    height: 130vh;
+    width: 100%;
+  }
 .square{
     width: auto;
     height: 25.95vw;
@@ -1159,7 +1455,7 @@
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 44vw;
     margin-left: 26vw;
@@ -1170,7 +1466,7 @@
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 51vw;
     margin-left: 26vw;
@@ -1181,7 +1477,7 @@
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 58vw;
     margin-left: 26vw;
@@ -1192,7 +1488,7 @@
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 65vw;
     margin-left: 26vw;
@@ -1228,13 +1524,13 @@
 }
 .black2{
     background-color: #000000;
-    height: 267vw;
+    height: 150vw;
 }
 .good1{
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 23vw;
     width: 100%;
@@ -1244,7 +1540,7 @@
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 70vw;
     width: 100%;
@@ -1254,7 +1550,7 @@
     color: #ffffff;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 117vw;
     width: 100%;
@@ -1264,23 +1560,23 @@
     width: auto;
     height: 52.6vw;
     position: absolute;
-    margin-top: 145vw;
+    margin-top: 20vw;
     left: 0vw;
 }
 .sahed2{
     width: auto;
     height: 62.7vw;
     position: absolute;
-    margin-top: 200vw;
+    margin-top: 72vw;
     left: -7.5vw;
 }
 .tana{
     color: #ffff00;
     font-size: 2.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
-    margin-top: 186.5vw;
+    margin-top: 62vw;
     left: 17vw;
     font-weight: 700;
 }
@@ -1288,9 +1584,9 @@
     color: #ffff00;
     font-size: 2.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
-    margin-top: 242vw;
+    margin-top: 122vw;
     left: 17vw;
     font-weight: 700;
 }
@@ -1302,7 +1598,7 @@
     color: rgba(0, 255, 165,1);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 20vw;
     width: 100%;
@@ -1312,7 +1608,7 @@
     color: rgba(0, 255, 165,1);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 28vw;
     left: -3vw;
@@ -1323,7 +1619,7 @@
     color: rgba(0, 255, 165,1);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 36vw;
     left: -4.5vw;
@@ -1339,7 +1635,7 @@
     color: #ffffff;
     font-size: 1.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 43vw;
     width: 100%;
@@ -1348,7 +1644,7 @@
     color: #ffffff;
     font-size: 1.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 45vw;
     width: 100%;
@@ -1357,7 +1653,7 @@
     color: #ffffff;
     font-size: 1.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 47vw;
     width: 100%;
@@ -1398,7 +1694,7 @@
     color: rgba(255, 96, 255,1);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 3vw;
     left: -27vw;
@@ -1410,7 +1706,7 @@
     color: rgba(255, 96, 255,1);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 11vw;
     left: -9vw;
@@ -1422,7 +1718,7 @@
     color: rgba(255, 96, 255,1);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 19vw;
     left: -24vw;
@@ -1469,7 +1765,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 5vw;
     left: -27vw;
@@ -1481,7 +1777,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 13vw;
     left: -22.5vw;
@@ -1493,7 +1789,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 21vw;
     left: -18vw;
@@ -1505,7 +1801,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 29vw;
     left: -39vw;
@@ -1517,7 +1813,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 37vw;
     left: -28vw;
@@ -1529,7 +1825,7 @@
     color: blue;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 29vw;
     left: -17vw;
@@ -1541,7 +1837,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 29vw;
     left: 15.3vw;
@@ -1551,37 +1847,37 @@
 }
 .ad1{
     background-color:rgba(255, 96, 255,1);
-    height:3.5vw;
+    height:6vw;
     width: 17vw;
     position: absolute;
-    margin-top:7vw;
+    margin-top:6vw;
     left:21vw;
     z-index: 0;
 }
 .ad2{
     background-color:rgba(255, 96, 255,1);
-    height:3.5vw;
-    width: 26.5vw;
+    height:6vw;
+    width: 24vw;
     position: absolute;
-    margin-top:15vw;
-    left:21vw;
+    margin-top:14vw;
+    left:22vw;
     z-index: 0;
 }
 .ad3{
     background-color:rgba(255, 96, 255,1);
-    height:3.5vw;
-    width: 35.5vw;
+    height:6vw;
+    width: 32vw;
     position: absolute;
     margin-top:22vw;
-    left:21vw;
+    left:22.5vw;
     z-index: 0;
 }
 .ad4{
     background-color:yellow;
-    height:8vw;
-    width: 35.5vw;
+    height:6.5vw;
+    width: 35vw;
     position: absolute;
-    margin-top:27vw;
+    margin-top:29vw;
     left:15vw;
     z-index: 0;
 }
@@ -1597,7 +1893,7 @@
     color: rgb(255, 255, 255);
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 5vw;
     left: 0vw;
@@ -1605,11 +1901,11 @@
     font-weight: 550;
 }
 .pic1{
-    width: auto;
-    height: 30vw;
+    width: 30vw;
+    height: 100vw;
     position: absolute;
-    left:42vw;
-    margin-top:15vw;
+    left:36vw;
+    margin-top:30vw;
 }
 .pic2{
     width: auto;
@@ -1653,7 +1949,7 @@
     color: yellow;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
     margin-top: 20vw;
     left: 0vw;
@@ -1664,9 +1960,9 @@
     color: yellow;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
-    margin-top: 40vw;
+    margin-top: 34vw;
     left: 3vw;
     width: 100%;
     font-weight: 550;
@@ -1675,9 +1971,9 @@
     color: yellow;
     font-size: 5.5vw;
     text-align: center;
-    font-family: 'Terret Road';
+    font-family: 'Chakra Petch';
     position: absolute;
-    margin-top: 48vw;
+    margin-top: 43vw;
     left: -5vw;
     width: 100%;
     font-weight: 550;
@@ -1687,7 +1983,7 @@
     height: 5vw;
     position: absolute;
     left: 42vw;
-    margin-top: 75vw;
+    margin-top: 60vw;
 }
 .foot{
     background-color: rgb(0, 0, 0);
@@ -1705,3 +2001,15 @@
     z-index: 3;
 }
 
+@keyframes lr {
+    0%   {opacity:0;left:-20vw; bottom:-13vh;}
+    100% {opacity:1;left:6vw; bottom:-13vh;}
+  }
+
+@keyframes rl {
+    0%   {opacity:0; right:-13vw; bottom:-12vh;}
+    100% {opacity:1; right:6vw; bottom:-12vh;}
+  }
+
+
+  
