@@ -1,7 +1,7 @@
 .cd-vertical-nav {
     position: fixed;
     z-index: 1;
-    right: 5%;
+    left: 0%;
     bottom: 30px;
     width: 90%;
     max-width: 400px;
@@ -31,7 +31,7 @@
     border-bottom: 1px solid rgba(58, 44, 65, 0.1);
   }
   .cd-vertical-nav a.active {
-    color: #c0a672;
+    color:#eaf2e3;
   }
   .cd-vertical-nav.open {
     -webkit-transform: scale(1);
@@ -126,10 +126,10 @@
       margin: 1.4em auto;
       border-bottom: none;
       font-size: 1.2rem;
-      color: #eaf2e3;
+      color:  #85f370;
     }
     .cd-vertical-nav a.active {
-      color: #eaf2e3;
+      color:  #85f370;
     }
     .cd-vertical-nav a::before, .cd-vertical-nav a::after {
       /* used to create the filled circle and the background icon */
@@ -151,7 +151,7 @@
       height: 32px;
       width: 32px;
       border-radius: 50%;
-      background: #eaf2e3;
+      background: #1121ff;
       -webkit-transform: translateX(-50%) scale(0.25);
       -moz-transform: translateX(-50%) scale(0.25);
       -ms-transform: translateX(-50%) scale(0.25);
@@ -177,8 +177,8 @@
       -moz-transition: -moz-transform 0.4s 0s, opacity 0.1s 0.3s;
       transition: transform 0.4s 0s, opacity 0.1s 0.3s;
     }
-    .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
-      background-color: #c0a672;
+    .cd-vertical-nav :before, .no-touch .cd-vertical-nav a:hover::before {
+      background-color: #85f370;
     }
     .cd-vertical-nav li:first-of-type a::after {
       /* change icon using image sprites */
@@ -241,6 +241,36 @@
       -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
       -o-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
       transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+    }
+    .cd-vertical-nav li:nth-of-type(5) a::after {
+      background-position: 0px 0px;
+      -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    }
+    .cd-vertical-nav li:nth-of-type(5) a::before {
+      -webkit-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      -moz-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      -ms-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      -o-transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+      transform: translateX(-50%) translateY(-7.5em) scale(0.25);
+    }
+    .cd-vertical-nav li:nth-of-type(6) a::after {
+      background-position: 0px 0px;
+      -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+      transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    }
+    .cd-vertical-nav li:nth-of-type(6) a::before {
+      -webkit-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      -moz-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      -ms-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      -o-transform: translateX(-50%) translateY(-10.5em) scale(0.25);
+      transform: translateX(-50%) translateY(-10.5em) scale(0.25);
     }
     .cd-vertical-nav .label {
       display: block;
